@@ -7,11 +7,8 @@ class Solution:
         
         for i in range(len(nums)):
             if nums[i] != 0:
-                nums[Front] = nums[i];
+                nums[i], nums[Front] = nums[Front], nums[i]
                 Front += 1;
-        for j in range(Front, len(nums)):
-            nums[j] = 0;
-
 
 
 
