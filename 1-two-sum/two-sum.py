@@ -8,6 +8,8 @@ class Solution:
             y = target - nums[i] # find complement
             if y in h and i != h[y] :
                 return [i , h[y]]
+                
+        return [] # no solution
 
 # Time complexity = O(n)
 # Space complexity = o(n)
